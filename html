@@ -1,0 +1,42 @@
+<doctype!html>
+  <html>
+    <head>
+      <title>password</title>
+      <style>
+        body {
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+
+        h1 {
+          color: #333;
+          margin-top: 50px;
+        }
+
+        form {
+          margin-top: 30px;
+        }
+      </style>
+      <script>
+          function checkPassword() 
+          {
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if(passwordText == "kiaan1234") {
+              return true;
+            }
+            alert("Access denied! Incorrect password!");
+            return false;
+          }
+        </script>
+    </head>
+    <body>
+      <p style="font-size: 30px;">"ENTER PASSWORD"
+      <p>plese enter password</p>
+      <p>Password:<input id="passwordBox" type="password"/></p>
+        <a href= "https://kids.nationalgeographic.com/" onclick="return               checkPassword();">
+            click here to submit password
+        </a>
+    </body>
+  </html>
